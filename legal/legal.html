@@ -1,95 +1,187 @@
-<article>
-   <h3>Protección de Datos</h3>
+<!doctype html>
+<html lang="es">
+    <head>
+        <!-- Juego de caracteres de casi todos los idiomas humanos (incluidos ñ, tildes ...) -->
+        <meta charset="utf-8" />
 
-<p>O Regulamento (UE) 2016/679 <span>do</span> Parlamento Europeo e <span>do</span> <span>Consello</span>, <span>do</span> 27 de abril, <span>xeral</span> de protección de datos, e a Lei Orgánica 3/2018, do 5 de decembro, de Protección de Datos de Carácter persoal e Xestión dos Dereitos Dixitais, regulan actualmente a protección das persoas físicas no relativo ao tratamento de datos persoais, dereito fundamental recollido no artigo 18.4 da Constitución Española.</p>
+        <!-- Escala inicial y renderizado _responsive_ por el ancho del dispositivo -->
+        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
 
-<p>Este espazo, que a ##NOMBRE-DE-LA-EMPRESA## pon ao dispor do cidadán, contén información achega do tratamento dos datos persoais que esta entidade realiza, aplicando así os principios que imperan no <span>RGPD</span> e a <span>LOPDGDD</span>. A ##NOMBRE-DE-LA-EMPRESA## quere facilitar un acceso áxil e rápido ás principais informacións relativas aos tratamentos de datos que realiza e aos dereitos que asisten ás persoas interesadas, para que estas poidan controlar de maneira efectiva os seus datos persoais.</p>
+        <!-- Compatibilidad con Microsoft Explorer -->
+        <meta http-equiv="X-UA-Compatible" content="ie=edge" />
 
-<h3>Definicións de interese</h3>
+        <!-- Indéxame NO y sígueme NO -->
+        <meta name="robots" content="noIndex, noFollow" />
 
-<p><u>Datos persoais:</u> toda información sobre unha persoa física identificada ou identificable («o interesado»); considerarase persoa física identificable toda persoa cuxa identidade poida determinarse, directa ou indirectamente, en particular mediante un identificador, por exemplo un nome, un número de identificación, datos de localización, un identificador en liña ou un ou varios elementos propios da identidade física, fisiolóxica, xenética, psíquica, económica, cultural ou social da devandita persoa.</p>
+        <!-- Breve descripción del sitio que se verá en los resultados de búsqueda -->
+        <meta name="description" content="Sitio web de prueba elaborado en el curso de Confección y Publicación de Páginas Web (IFCD0110). Unidad Formativa UF1303, Elaboración de hojas de estilos" />
+        <!-- Ruta al favicon -->
 
-<p><u>Tratamento:</u> calquera operación ou conxunto de operacións realizadas sobre datos persoais ou conxuntos de datos persoais, xa sexa por procedementos automatizados ou non, como a recollida, rexistro, organización, estruturación, conservación, adaptación ou modificación, extracción, consulta, utilización, comunicación por transmisión, difusión ou calquera outra forma de habilitación de acceso, cotexo ou interconexión, limitación, supresión ou destrución.</p>
+        <!-- Tipografia -->
+        <link rel="preconnect" href="https://fonts.googleapis.com" />
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+        <link href="https://fonts.googleapis.com/css2?family=PT+Serif:ital,wght@0,400;0,700;1,400;1,700&display=swap" rel="stylesheet" />
 
-<p><u>Responsable do tratamento:</u> a persoa física ou xurídica, autoridade pública, servizo ou outro organismo que, só ou xunto con outros, determine os fins e medios do tratamento; se o Dereito da Unión ou dos Estados membros determina os fins e medios do tratamento, o responsable do tratamento ou os criterios específicos para o seu nomeamento poderá establecelos o Dereito da Unión ou dos Estados membros.</p>
+        <!-- Utilícese una hoja de estilos Normalize -->
+        <link rel="stylesheet" href="https://necolas.github.io/normalize.css/latest/normalize.css" />
 
-<p><u>Encargado do tratamento:</u> a persoa física ou xurídica, autoridade pública, servizo ou outro organismo que trate datos persoais por conta do responsable do tratamento.</p>
+        <!-- Hover.css de ianlunn GitHub -->
+        <link rel="stylesheet" href="assets/css/hover.css" />
 
-<p><u>Destinatario:</u> a persoa física ou xurídica, autoridade pública, servizo ou outro organismo ao que se comuniquen datos persoais, trátese ou non dun terceiro. Con todo, non se considerarán destinatarios as autoridades públicas que poidan recibir datos persoais no marco dunha investigación concreta de conformidade co Dereito da Unión ou dos Estados membros; o tratamento de tales datos polas devanditas autoridades públicas será conforme coas normas en materia de protección de datos aplicables aos fins do tratamento.</p>
+        <!-- Ruta de la hoja tipo grafia -->
+        <link rel="stylesheet" href="../assets/css/tipografia.css" />
 
-<p><u>Consentimento do interesado:</u> toda manifestación de vontade libre, específica, informada e inequívoca pola que o interesado acepta, xa sexa mediante unha declaración ou unha clara acción afirmativa, o tratamento de datos persoais que lle <span>conciernen</span>.</p>
+        <!-- Ruta a las hojas de visibilidad -->
+        <link rel="stylesheet" href="../assets/css/visibilidad.css" />
 
-<h3>Responsable do tratamento</h3>
+        <!-- Ruta de hoja de images -->
+        <link rel="stylesheet" href="../assets/css/images.css" />
 
-<p>##NOMBRE-DE-LA-EMPRESA##</p>
+        <!-- Ruta de la hoja queries -->
+        <link rel="stylesheet" href="../assets/css/queries.css" />
 
-<p>##UBICACION##</p>
+        <!-- Ruta de la hoja transforms -->
+        <link rel="stylesheet" href="../assets/css/transforms.css" />
 
-<p>Teléfono: <a href="tel:+34##TELEFONO##"></a>##TELEFONO##</p>
+        <!-- Ruta de la hoja variables -->
+        <link rel="stylesheet" href="../assets/css/variables.css" />
 
-<p>Correo electrónico: <a href="mailto:##CORREO##">##CORREO##</a></p>
+        <!-- Ruta de la hoja Menu Icon -->
+        <link rel="stylesheet" href="../assets/css/menuIcon.css" />
 
-<p>Fax: ##FAX##</p>
+        <!-- Ruta a las hojas de estilos -->
+        <link rel="stylesheet" href="../assets/css/estilos.css" />
 
-<h3>Delegado de Protección de Datos (<span>DPD</span>)</h3>
+        <!-- Título de la pestaña del navegador -->
+        <title>UF1303 | Elaboración de hojas de estilos</title>
+    </head>
 
-<p>O Delegado de Protección de Datos (<span>DPD</span>) da ##NOMBRE-DE-LA-EMPRESA## é a persoa encargada de supervisar o cumprimento da normativa de protección de datos na entidade. No <span>RGPD</span> sinálanse como as súas funcións as seguintes:</p>
+    <body>
+        <header>
+            <a href="#">
+                <figure class="logo"></figure>
+                <h1 class="pechado">Elaboración de hojas de estilos (UF1303)</h1>
+            </a>
+        </header>
+        <nav class="principal" aria-label="Navegación principal">
+            <h2 class="pechado">Menú Principal</h2>
 
-<ul>
-      <li>Informar e asesorar á persoa responsable ou encargada do tratamento e o persoal empregado que se ocupe do tratamento dos deberes que lles afecten, en virtude do <span>RGPD</span> e da <span>LOPDGDD</span>.</li>
-	
-      <li>Supervisar o cumprimento do disposto no <span>RGPD</span> e na <span>LOPDGDD</span>, e das políticas da persoa responsable ou da encargada do tratamento en materia de protección de datos persoais. As persoas interesadas poderán contactar co <span>DPD</span> da ##NOMBRE-DE-LA-EMPRESA## a través do correo electrónico dpd@deputacionlugo.org</li>
-</ul><h3>Rexistro de Actividades de Tratamento </h3>
+            <input id="icon-menu" name="icon-menu" type="checkbox" />
 
-<p>O rexistro de actividades do tratamento de datos persoais ten como obxectivo que os interesados propietarios dos datos poidan coñecer da forma máis exacta posible para que se están utilizando os datos persoais que <span>comunicé</span> á ##NOMBRE-DE-LA-EMPRESA## e que se fai con eses datos. Así, en cada actividade de tratamento existe información sobre os seguintes aspectos:</p>
+            <label for="icon-menu" class="icon-menu" aria-label="Abrir/Cerrar menú">Menú</label>
 
-<ul><li>Entidade responsable</li>
-	<li>Finalidade</li>
-	<li>Interesados</li>
-	<li>Categorías de datos</li>
-	<li>Base de lexitimación</li>
-	<li>Destinatarios</li>
-	<li>Transferencias internacionais</li>
-	<li>Prazo de supresión</li>
-	<li>Medidas de seguridade</li>
-	<li>Dereitos</li>
-</ul>
+            <ul>
+                <li>
+                    <a href="../index.html">Inicio</a>
+                </li>
+                <li>
+                    <a href="#">Temas</a>
+                    <ul>
+                        <li>
+                            <a href="#">Textos</a>
+                        </li>
+                        <li>
+                            <a href="#">Imagenes</a>
+                        </li>
+                    </ul>
+                </li>
+                <li>
+                    <a href="#">Nosotros</a>
+                </li>
+                <li>
+                    <a href="#">Contacto</a>
+                </li>
+            </ul>
+        </nav>
 
-<h3>Dereitos: como exercer os dereitos</h3>
+        <main>
+            <article class="legal">
+                <h3>Protección de Datos</h3>
 
-<p>A normativa recoñece uns dereitos que permiten ás persoas garantir un control efectivo sobre os seus datos. Estes dereitos, que só poden ser exercidos pola persoa interesada ou por un representante debidamente acreditado pola lei, son os seguintes:</p>
+                <p>O Regulamento (UE) 2016/679 <span>do</span> Parlamento Europeo e <span>do</span> <span>Consello</span>, <span>do</span> 27 de abril, <span>xeral</span> de protección de datos, e a Lei Orgánica 3/2018, do 5 de decembro, de Protección de Datos de Carácter persoal e Xestión dos Dereitos Dixitais, regulan actualmente a protección das persoas físicas no relativo ao tratamento de datos persoais, dereito fundamental recollido no artigo 18.4 da Constitución Española.</p>
 
-<p> </p>
+                <p>Este espazo, que a ##NOMBRE-DE-LA-EMPRESA## pon ao dispor do cidadán, contén información achega do tratamento dos datos persoais que esta entidade realiza, aplicando así os principios que imperan no <span>RGPD</span> e a <span>LOPDGDD</span>. A ##NOMBRE-DE-LA-EMPRESA## quere facilitar un acceso áxil e rápido ás principais informacións relativas aos tratamentos de datos que realiza e aos dereitos que asisten ás persoas interesadas, para que estas poidan controlar de maneira efectiva os seus datos persoais.</p>
 
-<p>Dado o volume dos datos tratados, cando o exercicio de dereitos non concrete sobre que tratamentos quérese exercer o dereito, a ##NOMBRE-DE-LA-EMPRESA## requirirá á persoa interesada coa fin de que o concrete. Entenderanse como desistidos os exercicios non concretados en tempo e forma.</p>
+                <h3>Definicións de interese</h3>
 
-<p>Poderanse rexeitar de forma argumentada as peticións de acceso excesivas ou desproporcionadas, de acordo co previsto na normativa vixente.</p>
+                <p><u>Datos persoais:</u> toda información sobre unha persoa física identificada ou identificable («o interesado»); considerarase persoa física identificable toda persoa cuxa identidade poida determinarse, directa ou indirectamente, en particular mediante un identificador, por exemplo un nome, un número de identificación, datos de localización, un identificador en liña ou un ou varios elementos propios da identidade física, fisiolóxica, xenética, psíquica, económica, cultural ou social da devandita persoa.</p>
 
-<p>A persoa interesada poderá exercer en todo momento os dereitos que garanten o control dos seus datos persoais: dereitos de acceso, rectificación, supresión, limitación, <span>portabilidad</span> e oposición do tratamento, previstos na normativa vixente, enviando a súa solicitude á dirección da ##NOMBRE-DE-LA-EMPRESA## —Rúa San Marcos, 8, 27001 Lugo—, entregando os formularios cubertos coa correspondente documentación requirida no Rexistro Xeral da ##NOMBRE-DE-LA-EMPRESA## ou mediante a sede electrónica da entidade 
+                <p><u>Tratamento:</u> calquera operación ou conxunto de operacións realizadas sobre datos persoais ou conxuntos de datos persoais, xa sexa por procedementos automatizados ou non, como a recollida, rexistro, organización, estruturación, conservación, adaptación ou modificación, extracción, consulta, utilización, comunicación por transmisión, difusión ou calquera outra forma de habilitación de acceso, cotexo ou interconexión, limitación, supresión ou destrución.</p>
 
-<p>A ##NOMBRE-DE-LA-EMPRESA## informaralle sobre as actuacións derivadas da súa petición no prazo dun mes. Se se trata de peticións especialmente complexas, o prazo pódese ampliar segundo o estipulado na normativa vixente, previa notificación á persoa interesada das causas que o motiven. En caso contrario, entenderase desestimada a solicitude, polo que se poderá interpoñer a oportuna reclamación ante o delegado de protección de datos da ##NOMBRE-DE-LA-EMPRESA## ou a autoridade de control competente (Axencia Española de Protección de Datos (<a href="https://www.aepd.es/">https://www.aepd.es</a>)).</p>
+                <p><u>Responsable do tratamento:</u> a persoa física ou xurídica, autoridade pública, servizo ou outro organismo que, só ou xunto con outros, determine os fins e medios do tratamento; se o Dereito da Unión ou dos Estados membros determina os fins e medios do tratamento, o responsable do tratamento ou os criterios específicos para o seu nomeamento poderá establecelos o Dereito da Unión ou dos Estados membros.</p>
 
-<h3>Normativa de aplicación:</h3>
+                <p><u>Encargado do tratamento:</u> a persoa física ou xurídica, autoridade pública, servizo ou outro organismo que trate datos persoais por conta do responsable do tratamento.</p>
 
-<ul><li><a href="https://www.boe.es/doue/2016/119/L00001-00088.pdf">Regulamento (UE) 2016/679 do Parlamento Europeo e do Consello do 27 de abril de 2016 relativo á protección das persoas físicas no que respecta ao tratamento de datos persoais e á libre circulación destes datos e polo que se derroga a Directiva 95/46/CE (Regulamento xeral de protección de datos).</a></li>
-	<li><a href="https://www.boe.es/buscar/act.php?id=BOE-A-2018-16673">Lei Orgánica 3/2018, do 5 de decembro, de Protección de Datos Persoais e garantía dos dereitos dixitais.</a></li>
-	<li><a href="https://www.boe.es/boe/dias/2022/05/04/pdfs/BOE-A-2022-7191.pdf" target="_blank" title="Acceso ao RD 311/2022, do 3 de maio, que regula o Esquema Nacional de Seguridade ">Real Decreto 311/2022, do 3 de maio, polo que se regula o Esquema Nacional de Seguridade</a></li>
-</ul><hr /><h5>Interoperabilidade</h5>
+                <p><u>Destinatario:</u> a persoa física ou xurídica, autoridade pública, servizo ou outro organismo ao que se comuniquen datos persoais, trátese ou non dun terceiro. Con todo, non se considerarán destinatarios as autoridades públicas que poidan recibir datos persoais no marco dunha investigación concreta de conformidade co Dereito da Unión ou dos Estados membros; o tratamento de tales datos polas devanditas autoridades públicas será conforme coas normas en materia de protección de datos aplicables aos fins do tratamento.</p>
 
-<p>De acordo co artigo 28.2 da Lei 39/2015, de 1 de outubro, do Procedemento Administrativo Común das Administracións Públicas os interesados non estarán obrigados a achegar documentos que fosen elaborados por calquera Administración, con independencia de que a presentación dos citados documentos teña carácter preceptivo ou facultativo no procedemento de que se trate, sempre que o interesado expresase o seu consentimento a que sexan consultados ou solicitados os devanditos documentos. Presumirase que a consulta ou obtención é autorizada polos interesados salvo que conste no procedemento a súa oposición expresa ou a lei especial aplicable requira consentimento expreso.</p>
+                <p><u>Consentimento do interesado:</u> toda manifestación de vontade libre, específica, informada e inequívoca pola que o interesado acepta, xa sexa mediante unha declaración ou unha clara acción afirmativa, o tratamento de datos persoais que lle <span>conciernen</span>.</p>
 
-<p">A Resolución de 28 de xuño de 2012, da Secretaría de Estado de Administracións Públicas, pola que se aproba a Norma Técnica de Interoperabilidade de Protocolos de intermediación de datos; establece o modelo operativo da interoperabilidade a nivel nacional, así como os roles e actores que participan durante a realización dunha consulta interoperabilidade.</p>
+                <h3>Responsable do tratamento</h3>
 
-<p>A ##NOMBRE-DE-LA-EMPRESA## aproba, por resolución de presidencia con data 15 de febreiro de 2019, o catálogo de procedementos e servizos que realiza e as necesidades de consumo de servizos de consulta de información a outros organismos que cada un pode precisar durante a súa tramitación. </p>
+                <p>##NOMBRE-DE-LA-EMPRESA##</p>
 
-<ul><li align="justify"><a class="file file--mime-application-pdf file--application-pdf" data-entity-type="file" data-entity-uuid="2394b18f-9f3a-4a84-abb8-616d36d9b6a1" href="/sites/deputacionlugo.org/files/inline-files/Resoluci%C3%B3n%2015%20de%20febreiro%202019.pdf">Resolución de presidencia, do 15 de febreiro de 2019, polo que se aproba o catálogo de procedementos e servizos da ##NOMBRE-DE-LA-EMPRESA## e as súas necesidades de consulta de información. </a></li>
-	<li align="justify"><a class="file file--mime-application-pdf file--application-pdf" data-entity-type="file" data-entity-uuid="79755e4f-bc1e-49e8-b52a-89c2b2622f7a" href="/sites/deputacionlugo.org/files/inline-files/FORMULARIO%20CONSENTIMIENTO.pdf">Modelo xenérico de consentimento de consulta telemática con outras Administracións Públicas. </a></li>
-</ul><hr /><h3>>Seguridade da información</<h3>>
+                <p>##UBICACION##</p>
 
-<p>Na seguinte ligazón pode descargar e consultar a <a class="file file--mime-application-pdf file--application-pdf" data-entity-type="file" data-entity-uuid="d08355b1-1897-4a41-bac0-0d8dd4ec5423" href="/sites/deputacionlugo.org/files/inline-files/ENS.02%20Politica%20de%20Seguridade%20e%20Proteccion%20de%20datos_v8_gal.report_0.pdf">Política de Seguridade da Información e Protección de Datos da ##NOMBRE-DE-LA-EMPRESA##</a></p>
-</div>
-      
-      </div>
-    </div>
-  </div> 
-</article>
+                <p>Teléfono: <a href="tel:+34##TELEFONO##"></a>##TELEFONO##</p>
+
+                <p>Correo electrónico: <a href="mailto:##CORREO##">##CORREO##</a></p>
+
+                <p>Fax: ##FAX##</p>
+
+                <h3>Delegado de Protección de Datos (<span>DPD</span>)</h3>
+
+                <p>O Delegado de Protección de Datos (<span>DPD</span>) da ##NOMBRE-DE-LA-EMPRESA## é a persoa encargada de supervisar o cumprimento da normativa de protección de datos na entidade. No <span>RGPD</span> sinálanse como as súas funcións as seguintes:</p>
+
+                <ul>
+                    <li>Informar e asesorar á persoa responsable ou encargada do tratamento e o persoal empregado que se ocupe do tratamento dos deberes que lles afecten, en virtude do <span>RGPD</span> e da <span>LOPDGDD</span>.</li>
+
+                    <li>Supervisar o cumprimento do disposto no <span>RGPD</span> e na <span>LOPDGDD</span>, e das políticas da persoa responsable ou da encargada do tratamento en materia de protección de datos persoais. As persoas interesadas poderán contactar co <span>DPD</span> da ##NOMBRE-DE-LA-EMPRESA## a través do correo electrónico dpd@deputacionlugo.org</li>
+                </ul>
+                <h3>Rexistro de Actividades de Tratamento</h3>
+
+                <p>O rexistro de actividades do tratamento de datos persoais ten como obxectivo que os interesados propietarios dos datos poidan coñecer da forma máis exacta posible para que se están utilizando os datos persoais que <span>comunicé</span> á ##NOMBRE-DE-LA-EMPRESA## e que se fai con eses datos. Así, en cada actividade de tratamento existe información sobre os seguintes aspectos:</p>
+
+                <ul>
+                    <li>Entidade responsable</li>
+                    <li>Finalidade</li>
+                    <li>Interesados</li>
+                    <li>Categorías de datos</li>
+                    <li>Base de lexitimación</li>
+                    <li>Destinatarios</li>
+                    <li>Transferencias internacionais</li>
+                    <li>Prazo de supresión</li>
+                    <li>Medidas de seguridade</li>
+                    <li>Dereitos</li>
+                </ul>
+
+                <h3>Dereitos: como exercer os dereitos</h3>
+
+                <p>A normativa recoñece uns dereitos que permiten ás persoas garantir un control efectivo sobre os seus datos. Estes dereitos, que só poden ser exercidos pola persoa interesada ou por un representante debidamente acreditado pola lei, son os seguintes:</p>
+
+                <p>Dado o volume dos datos tratados, cando o exercicio de dereitos non concrete sobre que tratamentos quérese exercer o dereito, a ##NOMBRE-DE-LA-EMPRESA## requirirá á persoa interesada coa fin de que o concrete. Entenderanse como desistidos os exercicios non concretados en tempo e forma.</p>
+
+                <p>Poderanse rexeitar de forma argumentada as peticións de acceso excesivas ou desproporcionadas, de acordo co previsto na normativa vixente.</p>
+
+                <p>A persoa interesada poderá exercer en todo momento os dereitos que garanten o control dos seus datos persoais: dereitos de acceso, rectificación, supresión, limitación, <span>portabilidad</span> e oposición do tratamento, previstos na normativa vixente, enviando a súa solicitude á dirección da ##NOMBRE-DE-LA-EMPRESA## —Rúa San Marcos, 8, 27001 Lugo—, entregando os formularios cubertos coa correspondente documentación requirida no Rexistro Xeral da ##NOMBRE-DE-LA-EMPRESA## ou mediante a sede electrónica da entidade</p>
+
+                <p>A ##NOMBRE-DE-LA-EMPRESA## informaralle sobre as actuacións derivadas da súa petición no prazo dun mes. Se se trata de peticións especialmente complexas, o prazo pódese ampliar segundo o estipulado na normativa vixente, previa notificación á persoa interesada das causas que o motiven. En caso contrario, entenderase desestimada a solicitude, polo que se poderá interpoñer a oportuna reclamación ante o delegado de protección de datos da ##NOMBRE-DE-LA-EMPRESA## ou a autoridade de control competente (Axencia Española de Protección de Datos (<a href="https://www.aepd.es/">https://www.aepd.es</a>)).</p>
+
+                <h3>Normativa de aplicación:</h3>
+
+                <ul>
+                    <li><a href="https://www.boe.es/doue/2016/119/L00001-00088.pdf">Regulamento (UE) 2016/679 do Parlamento Europeo e do Consello do 27 de abril de 2016 relativo á protección das persoas físicas no que respecta ao tratamento de datos persoais e á libre circulación destes datos e polo que se derroga a Directiva 95/46/CE (Regulamento xeral de protección de datos).</a></li>
+                    <li><a href="https://www.boe.es/buscar/act.php?id=BOE-A-2018-16673">Lei Orgánica 3/2018, do 5 de decembro, de Protección de Datos Persoais e garantía dos dereitos dixitais.</a></li>
+                    <li><a href="https://www.boe.es/boe/dias/2022/05/04/pdfs/BOE-A-2022-7191.pdf" target="_blank" title="Acceso ao RD 311/2022, do 3 de maio, que regula o Esquema Nacional de Seguridade ">Real Decreto 311/2022, do 3 de maio, polo que se regula o Esquema Nacional de Seguridade</a></li>
+                </ul>
+                <hr />
+                <h5>Interoperabilidade</h5>
+
+                <p>De acordo co artigo 28.2 da Lei 39/2015, de 1 de outubro, do Procedemento Administrativo Común das Administracións Públicas os interesados non estarán obrigados a achegar documentos que fosen elaborados por calquera Administración, con independencia de que a presentación dos citados documentos teña carácter preceptivo ou facultativo no procedemento de que se trate, sempre que o interesado expresase o seu consentimento a que sexan consultados ou solicitados os devanditos documentos. Presumirase que a consulta ou obtención é autorizada polos interesados salvo que conste no procedemento a súa oposición expresa ou a lei especial aplicable requira consentimento expreso.</p>
+
+                <p>A Resolución de 28 de xuño de 2012, da Secretaría de Estado de Administracións Públicas, pola que se aproba a Norma Técnica de Interoperabilidade de Protocolos de intermediación de datos; establece o modelo operativo da interoperabilidade a nivel nacional, así como os roles e actores que participan durante a realización dunha consulta interoperabilidade.</p>
+
+                <p>A ##NOMBRE-DE-LA-EMPRESA## aproba, por resolución de presidencia con data 15 de febreiro de 2019, o catálogo de procedementos e servizos que realiza e as necesidades de consumo de servizos de consulta de información a outros organismos que cada un pode precisar durante a súa tramitación.</p>
+            </article>
+        </main>
+    </body>
+</html>
