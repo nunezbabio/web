@@ -17,11 +17,19 @@
         <meta name="description" content="Sitio web de prueba elaborado en el curso de Confección y Publicación de Páginas Web (IFCD0110). Unidad Formativa UF1303, Elaboración de hojas de estilos" />
         <!-- Ruta al favicon -->
 
+        <!-- Tipografia -->
+        <link rel="preconnect" href="https://fonts.googleapis.com" />
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+        <link href="https://fonts.googleapis.com/css2?family=PT+Serif:ital,wght@0,400;0,700;1,400;1,700&display=swap" rel="stylesheet" />
+
         <!-- Utilícese una hoja de estilos Normalize -->
         <link rel="stylesheet" href="https://necolas.github.io/normalize.css/latest/normalize.css" />
 
         <!-- Hover.css de ianlunn GitHub -->
         <link rel="stylesheet" href="assets/css/hover.css" />
+
+        <!-- Ruta de la hoja tipo grafia -->
+        <link rel="stylesheet" href="assets/css/tipografia.css" />
 
         <!-- Ruta a las hojas de visibilidad -->
         <link rel="stylesheet" href="assets/css/visibilidad.css" />
@@ -49,7 +57,12 @@
     </head>
 
     <body>
-        <header></header>
+        <header>
+            <a href="#">
+                <figure class="logo"></figure>
+                <h1 class="pechado">Elaboración de hojas de estilos (UF1303)</h1>
+            </a>
+        </header>
         <nav class="principal" aria-label="Navegación principal">
             <h2 class="pechado">Menú Principal</h2>
 
@@ -92,7 +105,7 @@
                     <h5>Esto es un h5</h5>
                     <h6>Esto es un h6</h6>
 
-                    <h2>Referencia teórica</h2>
+                    <h3>Referencia teórica</h3>
                     <p>Enlaces y documentos ce interes</p>
 
                     <ul class="enlaces-pdf">

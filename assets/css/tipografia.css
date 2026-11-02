@@ -1,0 +1,101 @@
+@charset "UTF-8";
+
+@font-face {
+    font-family: "dimbo";
+    src: url(../font/dimbo/);
+}
+/* Resto */
+
+/* @import url('https://fonts.googleapis.com/css2?family=PT+Serif:ital,wght@0,400;0,700;1,400;1,700&display=swap" rel="stylesheet'); */
+
+html {
+    font-family: "dimbo", Verdana, Arial, sans-serif;
+    font-optical-sizing: auto;
+    font-weight: normal;
+    font-style: normal;
+}
+
+/* Títulos */
+
+/* @import url('https://fonts.googleapis.com/css2?family=PT+Serif:ital,wght@0,400;0,700;1,400;1,700&display=swap" rel="stylesheet'); */
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+    font-family: "dimbo", Impact, "Arial Black", Times, serif;
+    font-optical-sizing: auto;
+    font-weight: 600;
+    font-style: italic;
+
+    text-shadow: 1px 1px 1px #000;
+}
+
+body,
+a,
+li,
+span {
+    color: var(--color-texto);
+}
+
+h3 {
+    color: var(--color-1);
+}
+
+a {
+    text-decoration: none;
+    color: var(--color-2);
+
+    &::hover {
+        color: var(--color-a--hover);
+    }
+}
+
+html {
+    font-size: 10px;
+}
+
+h2 {
+    font-size: var(--font-size-xxxl);
+}
+
+h3 {
+    font-size: var(--font-size-xxl);
+    color: var(--color-1);
+}
+
+h4 {
+    font-size: var(--font-size-xl);
+}
+
+h5 {
+    font-size: var(--font-size-l);
+}
+
+h3 {
+    &::first-letter {
+        color: blue;
+    }
+}
+
+a,
+ul,
+li,
+a {
+    font-size: var(--font-size-s);
+}
+
+figcaption,
+small,
+footer ul li a {
+    font-size: var(--font-size-mini);
+}
+
+@media (min-width: 700px) {
+    main {
+        & > section {
+        }
+    }
+}

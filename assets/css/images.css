@@ -7,7 +7,7 @@
 
     --bg-img-galeria-portada: url(https://cdn.pixabay.com/photo/2020/02/09/13/08/banner-4833105_960_720.jpg);
 
-    --bg-img--marca-agua: url(assets/svg/mn.svg);
+    --bg-img--marca-agua: url(../svg/mn.svg);
     --marca-agua: 5rem;
 }
 

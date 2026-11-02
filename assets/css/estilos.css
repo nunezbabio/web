@@ -1,5 +1,8 @@
 :root {
     /* Font Size */
+
+    --font-family: "dimbo";
+
     --font-size-m: clamp(1rem, 0.95rem + 0.25vw, 1.25rem);
     --font-size-s: clamp(0.875rem, 0.83rem + 0.2vw, 1rem);
 
@@ -24,7 +27,8 @@
     --color-a: blue;
     --color-a--hover: #620202;
 
-    --logo-ratio: 200/105;
+    --logo: url(../svg/mn.svg);
+    --logo-ratio: 79/51;
 }
 
 html,
@@ -56,75 +60,97 @@ ul {
     }
 }
 
-body,
-a,
-li,
-span {
-    color: var(--color-texto);
-}
+/* Maquilacion */
 
-h3 {
-    color: var(--color-1);
-}
+body {
+    & header {
+        padding-left: 4vh;
+    }
 
-a {
-    text-decoration: none;
-    color: var(--color-2);
+    &.nav.principal {
+        padding-right: 4vh;
+    }
 
-    &::hover {
-        color: var(--color-a--hover);
+    & main > section > article {
+        padding: 5vh;
+        padding-left: 4vh;
+        padding-right: 4vh;
     }
 }
 
-html {
-    font-size: 10px;
+@media (min-width: 1024px) {
+    body {
+        & header {
+            padding-left: 10vh;
+        }
+    }
+
+    & nav.principal {
+        padding-right: 10vh;
+    }
+
+    & main > section > article {
+        padding-left: 10vh;
+        padding-right: 10vh;
+    }
 }
 
-h2 {
-    font-size: var(--font-size-xxxl);
+body {
+    position: relative;
+    & > header {
+        z-index: 3;
+    }
+    & > nav {
+        z-index: 2;
+    }
 }
 
-h3 {
-    font-size: var(--font-size-xxl);
-    color: var(--color-1);
+body > header,
+body > nav.principal {
+    position: fixed;
+    top: 0;
+    height: 3.5rem;
 }
 
-h4 {
-    font-size: var(--font-size-xl);
+body > header {
+    display: flex;
+    align-items: center;
+
+    /* To Do @media queries */
+    padding-left: 7.5vw;
+
+    & a {
+        & figure.logo {
+            background-image: url(../svg/mn.svg);
+
+            height: var(--logo-ratio);
+            width: calc(3rem * var(--logo-ratio));
+
+            margin: 0;
+
+            background-color: transparent;
+            background-repeat: no-repeat;
+            background-position: 50% 50%;
+            background-size: cover;
+            background-attachment: scroll;
+            background-origin: border-box;
+            filter: none;
+        }
+    }
 }
 
-h5 {
-    font-size: var(--font-size-l);
+body main {
+    min-width: 100%;
+    min-height: calc(100vh - 3.5rem);
+    height: auto;
+    margin-top: 3.5rem;
+    width: 100%;
 }
 
-a,
-ul,
-li,
-a {
-    font-size: var(--font-size-s);
-}
-
-figcaption,
-small,
-footer ul li a {
-    font-size: var(--font-size-mini);
-}
-
-.wu-transition-color {
-    width: 10rem;
-    height: 10rem;
-    background-color: steelblue;
-    box-shadow: none;
-
-    transition:
-        background-color 2s none,
-        widthh 2s none,
-        box-shadow 2s none;
-
-    &:hover {
-        width: 100%;
-        background-color: orange;
-
-        box-shadow: 0 4px 12px rgba(5, 5, 5, 0.2);
+@media screen and (min-width: 45rem) {
+    body main {
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: space-between;
     }
 }
